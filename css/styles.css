@@ -1,0 +1,277 @@
+html {
+    background-color: #615b52;
+    color: #C9C2B6;
+    
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+
+
+header{
+    text-align: center;
+    /* background-color: #615b52; */
+    background-color: #615b52;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    justify-content: center;
+}
+
+
+header .logo{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+header .logo img{
+    height: 50px;
+}
+
+nav{
+    text-align: center;
+    background-color: #615b52;
+    color: #C9C2B6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+
+main{
+    padding: 1em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #e5e3e0;
+    color: #615b52;
+    text-align: center;
+}
+
+footer{
+    /* background-color: #615b52; */
+    background-color:#2c2925;
+    color:#C9C2B6;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+
+footer .MapaDelSitio{
+    
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 1em;
+    color: #eeedeb;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline; 
+    padding: 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #C9C2B6;
+    text-transform: uppercase;
+    transition: color 0.5s;
+    padding: 1em;
+  } 
+
+nav ul li a:hover {
+color: #d3d0cb;
+} 
+
+@media (max-width: 950px){
+    nav ul li {
+        display: block; 
+        padding: 1em;
+        text-align: left;
+        border-bottom: solid 1px white;
+    }
+
+    nav ul li a {
+        
+    }
+
+    nav ul {
+        padding: 1em;  
+    }
+}
+
+.logoMl{
+    width: 200px;
+}
+
+
+
+footer .MapaDelSitio p a {
+    text-decoration: none;
+    color: #eeedeb;
+    
+} 
+
+footer .MapaDelSitio p a:hover {
+    text-decoration: underline;
+} 
+
+footer .MapaDelSitio div h4 {
+    text-decoration: underline;
+} 
+
+footer .LogoRedes {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 1em;
+    vertical-align: middle;
+    color: #eeedeb;
+    border-bottom: double 1px #615b52;
+    
+    
+}
+
+footer .LogoRedes .Logo img {
+    width: 200px;
+}
+
+footer .DerechosReservados {
+    background-color: #171513;
+    color: #d3d0cb;
+    padding: 1em;
+
+}
+
+.fa-brands{
+    color: #eeedeb;
+    
+}
+
+.Redes p a i {
+    font-size: x-large;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    grid-area: 1em;
+    grid-gap: 1em;
+}
+
+.card {
+    padding: 1em;
+    background-color: #eeedeb;
+    border-radius: 5%;
+    transition: background-color 0.7s;
+}
+
+.card:hover{
+    background-color: white;
+}
+
+.card .precio {
+    color: red;
+    font-weight: bold;
+}
+
+.card .PrecioPorCaja {
+    font-size: small;
+}
+
+.card .descripcion {
+    font-weight: bold;
+    font-size: medium;
+}
+
+@media (min-width: 950px){
+    .productos {
+        grid-template-columns: repeat(3, auto);        
+    }
+
+}
+
+
+
+
+.Boton {
+    background-color: #171513;
+    color: #eeedeb;
+    border-color:#C9C2B6;
+    transition: background-color 0.3s;
+}
+
+.Boton:hover {
+    background-color: #615b52;
+    color: #eeedeb;
+    
+}
+
+form {
+    display: grid;
+    grid-gap: 1em;
+    padding: 1em;
+}
+
+input {
+    
+    height: 20px;
+}
+
+#nombre {
+    width: 300px;
+    border-radius: 3px;
+    border-style: none;
+}
+
+#email {
+    width: 300px;
+    border-radius: 3px;
+    border-style: none;
+}
+
+#asunto {
+    width: 300px;
+    border-radius: 3px;
+    border-style: none;
+}
+
+#mensaje {
+    border-radius: 3px;
+    width: 300px;
+    height: 150px;
+    border-style: none;
+}
+
+ @media (max-width: 400px){
+    /* .card{
+        grid-template-columns: 1fr
+    } */
+
+    #nombre {
+        width: 80%;
+        border-radius: 3px;
+        border-style: none;
+    }
+    
+    #email {
+        width: 80%;
+        border-radius: 3px;
+        border-style: none;
+    }
+    
+    
+    
+    #mensaje {
+        border-radius: 3px;
+        width: 80%;
+        height: 150px;
+        border-style: none;
+    }
+} 
+
