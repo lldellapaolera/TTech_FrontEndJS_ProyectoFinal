@@ -5,6 +5,7 @@ html {
 }
 
 * {
+    font-family: "Faculty Glyphic";
     box-sizing: border-box;
   }
 
@@ -95,9 +96,6 @@ color: #d3d0cb;
         border-bottom: solid 1px white;
     }
 
-    nav ul li a {
-        
-    }
 
     nav ul {
         padding: 1em;  
@@ -164,27 +162,28 @@ footer .DerechosReservados {
     grid-gap: 1em;
 }
 
-.card {
+.productos .card {
     padding: 1em;
     background-color: #eeedeb;
     border-radius: 5%;
     transition: background-color 0.7s;
+    box-shadow: 4px 5px 5px #615b52;
 }
 
-.card:hover{
+.productos .card:hover{
     background-color: white;
 }
 
-.card .precio {
+.productos .card .precio {
     color: red;
     font-weight: bold;
 }
 
-.card .PrecioPorCaja {
+.productos .card .PrecioPorCaja {
     font-size: small;
 }
 
-.card .descripcion {
+.productos .card .descripcion {
     font-weight: bold;
     font-size: medium;
 }
@@ -204,6 +203,7 @@ footer .DerechosReservados {
     color: #eeedeb;
     border-color:#C9C2B6;
     transition: background-color 0.3s;
+    height: 35px;
 }
 
 .Boton:hover {
@@ -249,9 +249,7 @@ input {
 }
 
  @media (max-width: 400px){
-    /* .card{
-        grid-template-columns: 1fr
-    } */
+    
 
     #nombre {
         width: 80%;
@@ -274,4 +272,51 @@ input {
         border-style: none;
     }
 } 
+
+.opiniones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.opiniones .card {
+    padding: 1em;
+    margin: 1em;
+    background-color: #eeedeb;
+    border-radius: 5%;
+    transition: background-color 0.7s;
+    box-shadow: 4px 5px 5px #615b52;
+    width: 80%;
+
+}
+
+.opiniones .card:hover {
+    background-color: white;
+}
+
+.opiniones .card img {
+    border-radius: 5%;
+    width: 50px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    
+
+}
+    /* 
+    
+    
+
+     */
+
+@media (max-width: 400px) {
+    .opiniones .card {
+        width: 80%;
+    }
+}
+
+
+
 
