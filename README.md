@@ -1,2 +1,3 @@
-###Proyecto final del curso Talento Tech<br><br>
-Sitio web para un proveedor de venta de Ceramicas y revestimiento.
+###Proyecto final del curso Talento Tech
+##Sitio web para un proveedor de venta de Ceramicas y revestimiento.
+- Contiene un sitio 
